@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cours HTML</title>
+    <link rel="shortcut icon" href="Logo.png" />
+</head>
+
+<body>
+    <header>
+        <h1><span>&#9758;</span>Texte - Titre H1</h1>
+        <p>
+            Texte basique.
+            <em>Voici un texte en italique</em>.
+            <strong>Et un texte en gras</strong>.
+            <span>l'élément en span ne revient pas à la ligne</span>.
+        </p>
+        <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae,
+            quos. Quo, est inventore soluta illum laborum recusandae ex saepe quos?
+            Error laudantium eveniet corporis iste labore debitis expedita quam
+            rerum?
+        </p>
+    </header>
+    <section>
+        <div>
+            <h2><span>&#9758;</span>Photos - Titre H2</h2>
+            <img src="photo-paysage.jpg" height="200" alt="image-paysage" />
+        </div>
+        <div>
+            <h3><span>&#9758;</span>Listes - Titre H3</h3>
+            <ul>
+                <li>UL = unordered list</li>
+                <li>UL = unordered list</li>
+                <li>UL = unordered list</li>
+            </ul>
+            <ol>
+                <li>OL = ordered list</li>
+                <li>OL = ordered list</li>
+                <li>OL = ordered list</li>
+            </ol>
+        </div>
+        <div>
+            <h4><span>&#9758;</span>Tableaux - Titre H4</h4>
+            <table border="1" width="50%">
+                <!-- Légende -->
+                <caption>
+                    Populations d'Europe
+                </caption>
+                <!-- En-tete -->
+                <thead>
+                    <tr>
+                        <th>Pays</th>
+                        <th>Population</th>
+                    </tr>
+                </thead>
+                <!-- Corps du tableau -->
+                <tbody>
+                    <tr>
+                        <td>France</td>
+                        <td>66 000 000</td>
+                    </tr>
+                    <tr>
+                        <td>Allemagne</td>
+                        <td>82 000 000</td>
+                    </tr>
+                    <tr>
+                        <td>Espagne</td>
+                        <td>47 000 000</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div>
+            <h5><span>&#9758;</span>Liens - Titre H5</h5>
+            <a href="https://htmlcheatsheet.com/" target="_blank">HTML Cheat Sheet</a>
+            <br />
+            <a href="https://www.toptal.com/designers/htmlarrows/symbols" target="_blank">Icônes en HTML</a>
+        </div>
+        <div>
+            <h6><span>&#9758;</span>Vidéo - Titre H6</h6>
+            <video src="video.mp4" autoplay loop muted height="150"></video>
+        </div>
+    </section>
+    <br>
+    <section>
+        <h2>Formulaire</h2>
+        <form action="/action.php" method="post">
+            <label for="name">Nom:</label>
+            <input id="name" type="text" placeholder="Entrez votre nom" value="Doggo">
+            <br>
+            <label for="age">Age:</label>
+            <input id="age" type="number" min="0" max="99" step="1" value="18">
+            <br>
+            <label for="gender">Genre:</label>
+            <select id="gender">
+                <option value="homme">Homme</option>
+                <option selected value="femme">Femme</option>
+            </select>
+            <br>
+            <div>
+                <input type="radio" name="type" id="human">
+                <label for="human">Humain</label>
+
+                <input type="radio" name="type" id="dog" checked>
+                <label for="dog">Chien</label>
+
+                <input type="radio" name="type" id="cat">
+                <label for="cat">Chat</label>
+            </div>
+
+            <textarea cols="30" rows="10" placeholder="Entrez votre demande ici"></textarea>
+            <br>
+
+            <input id="box" type="checkbox">
+            <label for="box">Accepter les CGV</label>
+            <br>
+            <br>
+            <input type="submit" value="Valider">
+        </form>
+    </section>
+    <br>
+    <footer>
+        <a href="mailto:paulroux103@gmail.com">Ecrivez-moi !</a>
+        <br>
+        <a href="notice.txt" download="nom-du-fichier">Télécharger la notice</a>
+    </footer>
+</body>
+
+</html>
